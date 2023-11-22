@@ -5,7 +5,6 @@ session_start();
 
 $login = 'admin';
 $password = '123';
-
 if (!empty($_POST)) {
     if ($_POST['login'] == $login && $_POST['password'] == $password) {
         $_SESSION['auth'] = 1;
@@ -38,7 +37,7 @@ if (!empty($_POST)) {
         unset($_SESSION['res']);
     }
     ?>
-    <h3>Эту страницу может видеть любой пользователь</h3>
+    <h3>Hello Эту страницу может видеть любой пользователь</h3>
     <form method="post">
         Login: <input type="text" name="login">
         Password: <input type="password" name="password">
